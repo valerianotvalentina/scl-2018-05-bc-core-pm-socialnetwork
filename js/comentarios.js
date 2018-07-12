@@ -41,8 +41,9 @@ function deleteComments(){
   if(x==true){
   // Limpiamos todo lo del localStorage con .clear(), recordar el objeto global window.                
   window.localStorage.clear();
-  commentTextArea.value = '';
-  divDatos.innerHTML = '';
+  
+  /*commentTextArea.value = '';
+  divDatos.innerHTML = '';*/
   }else{
     return false;
   }
