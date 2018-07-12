@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>  
+      <!--Autentificación-->
+     <div id="registro">
+        <input id="name" type="text" placeholder="nombre usuario">
+        <input id="email" type="email" placeholder="correo electrónico">
+        <input id="password" type="password" placeholder="contraseña mín 6 caracteres">
+        <input id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse"> <!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
+            authDomain: "gifchatlaboratoria.firebaseapp.com",
+            databaseURL: "https://gifchatlaboratoria.firebaseio.com",
+            projectId: "gifchatlaboratoria",
+            storageBucket: "gifchatlaboratoria.appspot.com",
+            messagingSenderId: "103111342125"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="register.js"></script>
+
+</body>
+</html>
