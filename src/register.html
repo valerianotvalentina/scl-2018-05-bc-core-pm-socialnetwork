@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/register.css">
 </head>
-<body>  
-      <!--Autentificación-->
-     <div id="registro">
-        <input id="name" type="text" placeholder="nombre usuario">
-        <input id="email" type="email" placeholder="correo electrónico">
-        <input id="password" type="password" placeholder="contraseña mín 6 caracteres">
-        <input id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse"> <!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
-    </div>
+
+<body>
+	
+	<section>
+			<img id="img1" src="../imagenesVegan/bart-zimny-345682-unsplash.jpg" alt="">        
+	</section>
+			
+	
+  
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 text-center">
+					<div id="registro">
+						<form class="formulario">
+							<div>
+								<input class="inputRegistro" id="name" type="text" placeholder="nombre usuario">
+							</div>
+							<div>
+								<input class="inputRegistro" id="email" type="email" placeholder="correo electrónico">
+							</div>
+							<div>
+								<input class="inputRegistro" id="password" type="password" placeholder="contraseña mín 6 caracteres">
+							</div>
+							<div>
+								<input class="inputRegistro" id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse">
+							</div>	
+						</form><!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
+						<div>
+								<p>¿Tienes una cuenta? Entrar</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+
+
+  
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--enlaces de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <!--enlaces firebase-->
     <script>
-        // Initialize Firebase
         var config = {
             apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
             authDomain: "gifchatlaboratoria.firebaseapp.com",
@@ -31,7 +93,8 @@
         };
         firebase.initializeApp(config);
     </script>
-    <script src="register.js"></script>
+    <script src="js/register.js"></script>
 
 </body>
+
 </html>
