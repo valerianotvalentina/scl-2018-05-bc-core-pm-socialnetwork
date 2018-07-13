@@ -1,14 +1,102 @@
-#img1{
-  width: 100%;
-  
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.formulario{
-  padding-top: 30px;
-  text-align: center;
+.topBox {
+    background-color: #00ADA7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    z-index: 100;
+    /* z-index es el orden de capas */
 }
 
-.inputRegistro{
-  margin-bottom: 10px;
+.formulario {
+    padding-top: 200px;
+}
 
+#logo {
+    width: 220px;
+    height: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.imagenFondo {
+    background-image: url(../../imagenesVegan/fotoFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.inputRegistro {
+    margin-bottom: 10px;
+    width: 255px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px;
+    border-color: #9B9B9B;
+    background-image: none;
+    background-color: white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #4A4A4A;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: left;
+}
+
+.botonRegistro {
+    margin-bottom: 10px;
+    width: 255px;
+    height: 36px;
+    background-color: #00ADA7;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ingresarConCuenta {
+    font-size: 14px;
+    color: #4A4A4A;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.entrar {
+    font-size: 14px;
+    color: #00ADA7;
+    font-weight: 700;
+}
+
+a:link {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ADA7;
+    text-decoration: none;
 }

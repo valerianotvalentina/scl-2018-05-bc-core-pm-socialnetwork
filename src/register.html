@@ -5,50 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
+    <title>Vegan - La red social vegana</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 </head>
 
 <body>
-	
-	<section>
-			<img id="img1" src="../imagenesVegan/bart-zimny-345682-unsplash.jpg" alt="">        
-	</section>
-			
-	
-  
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-12 text-center">
-					<div id="registro">
-						<form class="formulario">
-							<div>
-								<input class="inputRegistro" id="name" type="text" placeholder="nombre usuario">
-							</div>
-							<div>
-								<input class="inputRegistro" id="email" type="email" placeholder="correo electrónico">
-							</div>
-							<div>
-								<input class="inputRegistro" id="password" type="password" placeholder="contraseña mín 6 caracteres">
-							</div>
-							<div>
-								<input class="inputRegistro" id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse">
-							</div>	
-						</form><!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
-						<div>
-								<p>¿Tienes una cuenta? Entrar</p>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-	</section>
-
-
-  
+    <header>
+        <div class="topBox">
+            <img id="logo" src="../imagenesVegan/LogoBlanco2.png">
+        </div>
+    </header>
+    <section class="imagenFondo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 text-center">
+                    <div id="registro">
+                        <form class="formulario">
+                            <div>
+                                <input class="inputRegistro" id="name" type="text" placeholder="Nombre usuario">
+                            </div>
+                            <div>
+                                <input class="inputRegistro" id="email" type="email" placeholder="Correo electrónico">
+                            </div>
+                            <div>
+                                <input class="inputRegistro" id="password" type="password" placeholder="Contraseña">
+                            </div>
+                            <div>
+                                <input class="botonRegistro" id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse">
+                            </div>
+                        </form>
+                        <!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
+                        <div>
+                            <p class="ingresarConCuenta">¿Tienes una cuenta? <a class="entrar" href="login.html">Entrar</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -73,13 +69,13 @@
 
 
 
-      <!--enlaces de bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+
+
+
+    <!--enlaces de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <!--enlaces firebase-->
     <script>
