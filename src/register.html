@@ -8,20 +8,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/register.css">
 </head>
 
 <body>
-    <div id="registro">
-        <input id="name" type="text" placeholder="nombre usuario">
-        <input id="email" type="email" placeholder="correo electrónico">
-        <input id="password" type="password" placeholder="contraseña mín 6 caracteres">
-        <input id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse">
-        <!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
-    </div>
+	
+	<section>
+			<img id="img1" src="../imagenesVegan/bart-zimny-345682-unsplash.jpg" alt="">        
+	</section>
+			
+	
+  
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 text-center">
+					<div id="registro">
+						<form class="formulario">
+							<div>
+								<input class="inputRegistro" id="name" type="text" placeholder="nombre usuario">
+							</div>
+							<div>
+								<input class="inputRegistro" id="email" type="email" placeholder="correo electrónico">
+							</div>
+							<div>
+								<input class="inputRegistro" id="password" type="password" placeholder="contraseña mín 6 caracteres">
+							</div>
+							<div>
+								<input class="inputRegistro" id="registerButton" onclick="registerWithFirebase()" type="button" value="Registrarse">
+							</div>	
+						</form><!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
+						<div>
+								<p>¿Tienes una cuenta? Entrar</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
 
-    <div>
-        <p>¿Tienes una cuenta? Entrar</p>
-    </div>
+
+  
 
 
 
@@ -45,7 +72,7 @@
 
 
 
-    
+
       <!--enlaces de bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
