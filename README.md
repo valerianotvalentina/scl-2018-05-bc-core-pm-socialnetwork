@@ -28,3 +28,28 @@ La información anterior fue una guía para tomar decisiones respecto a diseño 
 <img src="/img/2.jpeg" alt="Sketch de Baja Fidelidad"/>
 
 ## Sketch alta fidelidad
+
+##Elevator Pitch
+
+(https://docs.google.com/document/d/1TKRLRnSqV3JVRBjVmJD6Doc2LBPx86U5GDhDU0VuL-o)
+
+## Encuesta
+
+(https://docs.google.com/forms/d/131yIkEm4rjGGsC31ZtC6U2RX6LseuH-YmBcoiUabrcw)
+
+## Entrevistas
+
+(https://docs.google.com/document/d/1c2FCdl8ArsLrjdZfGi20LSQV-ML2tAYCrnm4WFNn9mU/edit)
+(https://docs.google.com/document/d/1tovm54iZIgTJwUY9iIEmj5JERTnMk5jDk3lv_5Hpedg/edit
+(https://drive.google.com/file/d/1I4b51qD5AcU9K8wMPB-zPU5JdPwvWP0l/view)
+(https://drive.google.com/file/d/1JyOeVQv6suGrF1jDU9GR9-R8kGI6-_yZ/view)
+(https://drive.google.com/file/d/1VyH0RyE1rmUUnWNvj285n1kv23kJN3nh/view)
+(https://drive.google.com/file/d/12oLS1TDOkSh1AhoQeugN3tTnXDEtHjRj/view)
+
+## Benchmark
+
+(https://docs.google.com/document/d/15FBKS3ixGXDpu21yEGawSYeZcuwE0zlcrEo7bLzD9Uw/edit)
+
+## Enlace trello
+
+(https://trello.com/b/clasDREa/red-social)
