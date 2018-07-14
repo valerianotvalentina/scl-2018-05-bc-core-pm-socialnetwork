@@ -13,11 +13,6 @@ function registerWithFirebase(){
       });
 }
 
-
-function printMail(){
-    document.getElementById("userMail").innerHTML= email.Value;
-  }
-
-  function comment(){
+function comment(){
     window.location= "comentarios.html"
-  }
+}

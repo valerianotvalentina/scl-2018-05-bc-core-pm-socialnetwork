@@ -12,6 +12,10 @@ function loginWithFirebase(){
       });
 }
 
+function comment(){
+    window.location= "comentarios.html"
+}
+
 
 
 //juana, juana@gmail.com, 1111111
