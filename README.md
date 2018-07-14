@@ -29,7 +29,7 @@ La información anterior fue una guía para tomar decisiones respecto a diseño 
 
 ## Sketch alta fidelidad
 
-##Elevator Pitch
+## Elevator Pitch
 
 (https://docs.google.com/document/d/1TKRLRnSqV3JVRBjVmJD6Doc2LBPx86U5GDhDU0VuL-o)
 
