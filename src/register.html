@@ -34,18 +34,18 @@
 								<input class="inputRegistro" id="password" type="password" placeholder="Contraseña">
 							</div>
 							<div>
-								<input class="botonRegistro" id="registerButton" onclick="registerWithFirebase(); comment() " type="button" value="Registrarse">
-						</form>
-						<!--FALTA AGREGAR ALGO PARA AVISAR Q CONTRASEÑA DEBE TENER MIN 6-->
-						<div>
-							<p class="ingresarConCuenta">¿Tienes una cuenta?
-								<a class="entrar" href="login.html">Entrar</a>
-							</p>
+								<input class="botonRegistro" id="registerButton" onclick="registerWithFirebase();" type="button" value="Registrarse">
+							</div>
+						</form>	
+						<p id="msnUsuario"></p>
+						<p class="ingresarConCuenta">¿Tienes una cuenta?
+							<a class="entrar" href="login.html">Entrar</a>
+						</p>
 						</div>
 						</div>
 					</div>
 				</div>
-			</div>
+	
 	</section>
 
 
@@ -81,8 +81,8 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
 	 crossorigin="anonymous"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-	<!--enlaces firebase-->
+	 <!--enlaces firebase-->
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>	
 	<script>
 		var config = {
 			apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
