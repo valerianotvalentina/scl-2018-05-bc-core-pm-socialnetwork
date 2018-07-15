@@ -26,11 +26,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="perfil.html">Ver peril
+                <a class="nav-item nav-link" href="perfil.html">Ver perfil
                   <span class="sr-only">(current)</span>
                 </a>
                 <a class="nav-item nav-link" href="#">Amigos</a>
-                <a class="nav-item nav-link disabled" onclick="logoutWithFirebase()" href="../src/login.html">Cerrar sesión</a>
+                <a class="nav-item nav-link" onclick="logoutWithFirebase()" href="../src/login.html">Cerrar sesión</a>
               </div>
             </div>
           </nav>
@@ -76,22 +76,21 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
-      authDomain: "gifchatlaboratoria.firebaseapp.com",
-      databaseURL: "https://gifchatlaboratoria.firebaseio.com",
-      projectId: "gifchatlaboratoria",
-      storageBucket: "gifchatlaboratoria.appspot.com",
-      messagingSenderId: "103111342125"
-    };
-    firebase.initializeApp(config);
-  </script>
+  
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDJkBe_1YurGlSVZgDQzaqfBSzF5yIzqRk",
+    authDomain: "redsocialvegan.firebaseapp.com",
+    databaseURL: "https://redsocialvegan.firebaseio.com",
+    projectId: "redsocialvegan",
+    storageBucket: "",
+    messagingSenderId: "258954224577"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="js/comentarios.js"></script>
-  <script src="js/login.js"></script>
-  <script src="js/perfil.js"></script>
   <script src="js/logout.js"></script>
 </body>
 

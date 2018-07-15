@@ -1,3 +1,9 @@
+var user= JSON.parse(localStorage.getItem("user"));
+if(user===null){
+  window.location= "register.html"
+}
+
+
 // Variables
 const listaTarea = document.getElementById('listaTareas');
 
@@ -55,8 +61,6 @@ function agregarTarea() {
     agregarTareasLocalStorage(tareas);
   }
 }
-
-
 // Elimina tarea del DOM
 function borrarTarea(e) {
   //console.log(e)
