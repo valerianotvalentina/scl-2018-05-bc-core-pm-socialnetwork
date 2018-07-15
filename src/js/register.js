@@ -27,6 +27,9 @@ function registerWithFirebase() {
 			if (error.code === "auth/invalid-email") {
 				msn.innerHTML = "Debes ingresar tus datos"
 			}
+			if (error.code === "auth/weak-password") {
+				msn.innerHTML = "Debes ingresar contraseña de al menos 6 caracteres";
+			}
 			console.log("Error de firebase > Código > " + error.code);
 			console.log("Error de firebase > Mensaje > " + error.message);
 		});
