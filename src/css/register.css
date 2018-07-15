@@ -14,7 +14,7 @@ body {
 }
 
 .formulario {
-    padding-top: 200px;
+    padding-top: 30px;
 }
 
 #logo {
@@ -37,13 +37,10 @@ body {
     margin-bottom: 10px;
     width: 255px;
     height: 36px;
+    border: 1px solid #9B9B9B;
     border-radius: 4px;
-    border: 1px;
-    border-color: #9B9B9B;
-    background-image: none;
+    box-sizing: border-box;
     background-color: white;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
     color: #4A4A4A;
     font-size: 14px;
@@ -99,4 +96,18 @@ a:hover {
 a:active {
     color: #00ADA7;
     text-decoration: none;
+}
+
+#msnUsuario {
+    padding-top: 155px;
+    color: #4A4A4A;
+    font-size: 10px;
+}
+
+.error {
+    padding: 5px;
+    border: 1px solid #DD3C10;
+    box-sizing: border-box;
+    background-color: #FFEBE8;
+    box-shadow: none;
 }
