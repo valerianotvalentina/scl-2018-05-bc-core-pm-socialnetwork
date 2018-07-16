@@ -1,8 +1,80 @@
-#usuario{
-  width: 50%;
-  padding-top: 5%;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.datos{
-  padding-top: 15%;
+#usuario {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.datos {
+    padding-top: 15%;
+}
+
+.navbar {
+    background-color: #e2c5bd;
+}
+
+.navbar .navbar-brand {
+    color: #4a4a4a;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar .navbar-text {
+    color: #4a4a4a;
+}
+
+.navbar .navbar-text a {
+    color: #ffffff;
+}
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #4a4a4a;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #ffffff;
+    background-color: #e2c5bd;
+}
+
+.navbar .navbar-link {
+    color: #4a4a4a;
+}
+
+.navbar .navbar-link:hover {
+    color: #ffffff;
+}
+
+.fa-bars {
+    color: #4a4a4a;
+    font-size: 30px;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;
+    /* 50% of your logo width */
+    display: block;
 }
