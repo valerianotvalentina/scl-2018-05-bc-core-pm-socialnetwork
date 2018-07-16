@@ -1,7 +1,5 @@
-function logoutWithFirebase() {
-	
-	localStorage.removeItem("user")
-	
+function logoutWithFirebase() {	
+	localStorage.removeItem("user") 	
 	firebase.auth().signOut()
 		.then(() => {
 			console.log("Usuario finalizó su sesión");
