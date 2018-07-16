@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegan - Iniciar sesión</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 </head>
+
 <body>
-  
- <!--Login-->
- <div id="login">
-    
-    <input id="email" type="email" placeholder="correo electrónico">
-    <input id="password" type="password" placeholder="contraseña">
-    <input id="loginButton" onclick="loginWithFirebase()" type="button" value="Iniciar sesión"><!--AGREGAR ALGO Q DIGA Q DEBE REGISTRARSE SI AUN NO LO HACE-->
-</div>
+    <header>
+        <div class="topBox">
+            <img id="isologo" src="../imagenesVegan/isologotipoBlanco.png">
+        </div>
+    </header>
 
-<div>
-  <p>¿Olvidaste tu contraseña?</p>
-</div>
+    <!--Login-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 text-center">
+                    <div id="msnUsuario">
+                        <p></p>
+                    </div>
+                    <div id="login">
+                        <div>
+                            <input id="email" class="inputInicioSesion" type="email" placeholder="Correo electrónico">
+                        </div>
+                        <div>
+                            <input id="password" class="inputInicioSesion" type="password" placeholder="Contraseña">
+                        </div>
+                        <div>
+                            <p>Olvidé mi contraseña</p>
+                        </div>
+                        <div>
+                            <input id="loginButton" class="inputInicioSesion" onclick="loginWithFirebase();" type="button" value="Iniciar sesión">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
-        authDomain: "gifchatlaboratoria.firebaseapp.com",
-        databaseURL: "https://gifchatlaboratoria.firebaseio.com",
-        projectId: "gifchatlaboratoria",
-        storageBucket: "gifchatlaboratoria.appspot.com",
-        messagingSenderId: "103111342125"
-    };
-    firebase.initializeApp(config);
-</script>
-<script src="js/login.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDJkBe_1YurGlSVZgDQzaqfBSzF5yIzqRk",
+            authDomain: "redsocialvegan.firebaseapp.com",
+            databaseURL: "https://redsocialvegan.firebaseio.com",
+            projectId: "redsocialvegan",
+            storageBucket: "",
+            messagingSenderId: "258954224577"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/login.js"></script>
 
 </body>
+
 </html>

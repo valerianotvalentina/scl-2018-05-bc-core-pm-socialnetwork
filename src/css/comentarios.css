@@ -1,0 +1,30 @@
+<<<<<<< HEAD:css/comentarios.css
+
+textarea{
+    resize: none;
+}
+p{
+    padding-right: 2%;
+    
+}
+#contenedorTareas{
+    padding: 2% 0;
+}
+h4{
+    position: absolute;
+=======
+
+textarea{
+    resize: none;
+}
+p{
+    padding-right: 2%;
+    
+}
+#contenedorTareas{
+    padding: 2% 0;
+}
+h4{
+    position: absolute;
+>>>>>>> vale/master:src/css/comentarios.css
+}
