@@ -4,18 +4,97 @@ body {
 
 textarea {
     resize: none;
+    height: 75px;
+    width: 300px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 1px solid #9B9B9B;
+    margin-top: 30px;
 }
 
-p {
-    padding-right: 2%;
+#botones {
+    margin-top: 5px;
+}
+
+.botonPrivacidad {
+    width: 120px;
+    height: 36px;
+    border-radius: 6px;
+    color: #4A4A4A;
+    border: 1.5px solid #E84154;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: white;
+    border: 0.5px solid #9B9B9B;
+}
+
+.botonPublicar {
+    width: 100px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    background-color: #E84154;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.botonModalAceptar {
+    width: 100px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    background-color: #E84154;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.botonEliminar {
+    width: 100px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    background-color: #00ADA7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.botonCancelar {
+    width: 100px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    background-color: #E84154;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal-body {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+.modal-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4A4A4A;
+    position: absolute;
 }
 
 #contenedorTareas {
-    padding: 2% 0;
+    margin-top: 50px;
 }
 
-h4 {
-    position: absolute;
+#listaTareas {
+    font-size: 14px;
 }
 
 .navbar {

@@ -44,22 +44,35 @@
     <section id="cabecera">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <h1 class="text-center align-middle">Mensajes</h1>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <textarea cols="30" rows="4" id="crearTarea" placeholder="Comparte tu sabiduría vegana"></textarea>
-                        </div>
-                        <div class="col-6">
-                            <button type="button" class="btn btn-primary" id="enviarTarea" data-toggle="modal">
-                <i class="fa fa-plus" aria-hidden="true"></i>Publicar</button>
-                        </div>
+                <div class="col-12 col-md-12 text-center">
+                    <div>
+                        <textarea id="crearTarea" placeholder="Comparte tu sabiduría vegana"></textarea>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row" id="botones">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col text-right">
+                    <div class="dropdown">
+                        <button class="botonPrivacidad dropdown-toggle" type="button" id="dropdownPrivacidad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Privacidad
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Amigos</a>
+                            <a class="dropdown-item" href="#">Público</a>
+                            <a class="dropdown-item" href="#">Solo yo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-left">
+                    <div>
+                        <button type="button" class="botonPublicar" id="enviarTarea" data-toggle="modal">Publicar</button>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
     </section>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -70,10 +83,10 @@
                     <h4 class="modal-title">Aviso</h4>
                 </div>
                 <div class="modal-body">
-                    <p>No se puede publicar mensaje vacío</p>
+                    <p>No se puede publicar un elemento vacío.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                    <button type="button" class="botonModalAceptar" data-dismiss="modal">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -85,27 +98,31 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true">x</span>
           </button>
                     <h4 class="modal-title" id="myModalLabel">¿Eliminar mensaje?</h4>
                 </div>
                 <div class="modal-body">
-                    Confirme para eliminar mensaje
+                    Confirme para eliminar mensaje.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="eliminar" class="btn btn btn-info" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Eliminar</button>
-                    <button type="button" id="cancelar" class="btn btn-danger" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Cancelar</button>
+                    <button type="button" id="eliminar" class="botonEliminar" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Eliminar</button>
+                    <button type="button" id="cancelar" class="botonCancelar" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Cancelar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="container" id="contenedorTareas">
-        <div class="row">
-            <div class="col-12">
-                <ul id="listaTareas">
-
-                </ul>
+    <!-- Contenedor de publicaciones -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 text-center">
+                    <div id="contenedorTareas">
+                        <ul id="listaTareas">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -114,8 +131,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
     <script>
         // Initialize Firebase
         var config = {
