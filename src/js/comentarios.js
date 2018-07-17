@@ -3,17 +3,17 @@ if (user === null) {
     window.location = "register.html"
 }
 // Variables
-const listaTarea = document.getElementById('listaTareas');
+const listaTarea = document.getElementById("listaTareas");
 
 // Ejecución eventos
 eventListeners();
 
 function eventListeners() {
     //Cuando se envia el formulario
-    document.getElementById('enviarTarea').addEventListener('click', agregarTarea); //boton crear tarea
+    document.getElementById("enviarTarea").addEventListener("click", agregarTarea); //boton crear tarea
     // Borrar publicaciones
     // Contenido cargado
-    document.addEventListener('DOMContentLoaded', localStorageListo);
+    document.addEventListener("DOMContentLoaded", localStorageListo);
 }
 
 // Funciones
@@ -60,7 +60,7 @@ function generarDom(post) {
 function agregarTarea() {
     // leer el valor del textarea
 
-    const tareas = document.getElementById('crearTarea').value;
+    const tareas = document.getElementById("crearTarea").value;
     if (tareas === "") {
         $('#myModal').modal() //se llama al modal
             //alert("no puede publicar mensajes vacíos");
@@ -80,20 +80,20 @@ function agregarTarea() {
 }
 // Elimina tarea del DOM
 function borrarTarea(e) {
-    console.log(e)
-    console.log(e.target.parentElement)
-    console.log(e.target.parentElement.innerText)
-    console.log(e.target.id)
+    console.log(e);
+    console.log(e.target.parentElement);
+    console.log(e.target.parentElement.innerText);
+    console.log(e.target.id);
 
     $('#myModal2').modal(); //se llama al modal
     document.getElementById("eliminar").addEventListener("click", eliminar); //evento boton eliminar
     document.getElementById("cancelar").addEventListener("click", cancelar); //evento boton cancelar
 
     function eliminar() {
-        if (e.target.id === 'borrar-tarea') {
-            let parent = e.target.parentElement
-            let autor = parent.childNodes[0].innerText
-            let mensaje = parent.childNodes[1].innerText
+        if (e.target.id === "borrar-tarea") {
+            let parent = e.target.parentElement;
+            let autor = parent.childNodes[0].innerText;
+            let mensaje = parent.childNodes[1].innerText;
             e.target.parentElement.remove();
             borrarTareasLocalStorage({ autor, mensaje });
         }
@@ -121,7 +121,7 @@ function agregarTareasLocalStorage(textoTarea) {
     // Añadir nueva publicacion
     tareas.push(textoTarea);
     // Convertir de string a arreglo para local storage
-    localStorage.setItem('tareas', JSON.stringify(tareas));
+    localStorage.setItem("tareas", JSON.stringify(tareas));
 
 }
 
@@ -129,10 +129,10 @@ function agregarTareasLocalStorage(textoTarea) {
 function obtenerTareasLocalStorage() {
     let tareas;
     // Revisamos los valores de local storage
-    if (localStorage.getItem('tareas') === null) {
+    if (localStorage.getItem("tareas") === null) {
         tareas = [];
     } else {
-        tareas = JSON.parse(localStorage.getItem('tareas'));
+        tareas = JSON.parse(localStorage.getItem("tareas"));
         //console.log(tareas);
     }
     return tareas;
@@ -141,8 +141,8 @@ function obtenerTareasLocalStorage() {
 // Eliminar publicacion de Local Storage
 function borrarTareasLocalStorage(post) {
 
-    let tareas
-        //console.log(borrarTarea)
+    let tareas;
+    //console.log(borrarTarea)
     tareas = obtenerTareasLocalStorage();
     //console.log(tareas);
     tareas.forEach(function(tarea, index) {
@@ -152,7 +152,7 @@ function borrarTareasLocalStorage(post) {
             tareas.splice(index, 1);
         }
     })
-    localStorage.setItem('tareas', JSON.stringify(tareas));
+    localStorage.setItem("tareas", JSON.stringify(tareas));
     //console.log(tareas)
 
 }
