@@ -22,21 +22,21 @@ function eventListeners() {
 function generarDom(post) {
 
     // Crear elementos
-    const itemTarea = document.createElement('div');
-    const parrafoAutor = document.createElement("p");
+    const itemTarea = document.createElement("div");
+    const parrafoAutor = document.createElement("h3");
     const autor = document.createTextNode(post.autor);
-    const parrafo = document.createElement('p');
+    const parrafo = document.createElement("p");
     const textTarea = document.createTextNode(post.mensaje);
-    const botonBorrar = document.createElement('button');
-    const textBoton = document.createTextNode('x');
+    const botonBorrar = document.createElement("button");
+    const textBoton = document.createTextNode("x");
     const like = document.createElement("i");
 
     // añadir clases a elementos
+    parrafo.setAttribute("class", "d-inline-block");
+    botonBorrar.setAttribute("class", "botonBorrarComment");
+    botonBorrar.setAttribute("id", "borrar-tarea");
+    botonBorrar.addEventListener("click", borrarTarea);
     like.classList.add("fas", "fa-heart", "heart");
-    parrafo.setAttribute('class', 'd-inline-block');
-    botonBorrar.setAttribute('class', 'btn btn-dark');
-    botonBorrar.setAttribute('id', 'borrar-tarea');
-    botonBorrar.addEventListener('click', borrarTarea);
 
     itemTarea.appendChild(parrafoAutor);
     parrafoAutor.appendChild(autor);
@@ -53,6 +53,7 @@ function generarDom(post) {
     botonBorrar.appendChild(textBoton);
     // añade item con tarea y boton a contenedor padre
     listaTarea.appendChild(itemTarea);
+
 }
 
 // Añadir tareas al documento

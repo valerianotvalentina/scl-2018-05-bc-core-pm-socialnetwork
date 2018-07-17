@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #e2c5bd;
 }
 
 textarea {
@@ -89,14 +90,6 @@ textarea {
     position: absolute;
 }
 
-#contenedorTareas {
-    margin-top: 50px;
-}
-
-#listaTareas {
-    font-size: 14px;
-}
-
 .navbar {
     background-color: #e2c5bd;
 }
@@ -163,4 +156,46 @@ textarea {
     margin-left: -50px !important;
     /* 50% of your logo width */
     display: block;
+    top: 10px;
+}
+
+.botonBorrarComment {
+    height: 30px;
+    width: 30px;
+    background-color: #E84154;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #E84154;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.heart {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #4a4a4a;
+}
+
+.d-inline-block {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+#cabecera {
+    background-color: #FFF;
+    padding-bottom: 30px;
+}
+
+#contenedorPublicaciones {
+    margin-top: 10px;
+    background-color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4A4A4A;
 }
