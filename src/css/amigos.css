@@ -2,30 +2,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#usuario {
-    width: 90px;
-    height: 90px;
-}
-
-#contenedorPerfil {
-    margin-top: 30px;
-}
-
-#datosUsuario {
-    color: #4a4a4a;
-    margin-top: 20px;
-}
-
-#datosNombre {
-    margin-bottom: 0px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-#datosMail {
-    font-size: 12px;
-}
-
 .navbar {
     background-color: #e2c5bd;
 }
