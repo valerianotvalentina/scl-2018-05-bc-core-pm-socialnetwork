@@ -1,4 +1,4 @@
-# Red social ¡Vegan GO!
+# Red social Vegan - La red social vegana
 
 A continuación encontrarás una red social creada y pensada para que las personas que han elegido como estilo de vida la alimentación vegana, puedan interactuar de forma directa, intercambiando información de relevancia para ellos(recetas, productos, opinión de lugares, etc).
 
