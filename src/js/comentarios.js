@@ -38,6 +38,29 @@ function generarDom(post) {
     botonBorrar.addEventListener("click", borrarTarea);
     like.classList.add("fas", "fa-heart", "heart");
 
+    let counter=0;
+    like.addEventListener('click', function(){
+      like.classList.toggle('red');
+      counter++;
+      let contad= document.getElementById("contador");
+      contad.innerHTML= counter;
+      console.log(counter);
+    })
+    function guardarLocalStorage(){  
+        localStorage.setItem("counter", JSON.stringify(counter));
+        };
+        guardarLocalStorage();
+    
+    function pedirLocalStorage(){
+        let counter= JSON.parse(localStorage.getItem("counter"));
+        console.log(counter);
+    }
+    pedirLocalStorage();
+
+
+
+
+
     itemTarea.appendChild(parrafoAutor);
     parrafoAutor.appendChild(autor);
 
