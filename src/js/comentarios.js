@@ -39,8 +39,8 @@ function generarDom(post) {
     like.classList.add("fas", "fa-heart", "heart");
 
     let counter = 0;
-    like.addEventListener("click", function() {
-        like.classList.toggle("red");
+    like.addEventListener('click', function() {
+        like.classList.toggle('red');
         counter++;
         let contad = document.getElementById("contador");
         contad.innerHTML = counter;
@@ -52,11 +52,18 @@ function generarDom(post) {
     };
     guardarLocalStorage();
 
+
     function pedirLocalStorage() {
-        let counter = JSON.parse(localStorage.getItem("counter"));
-        console.log(counter);
+        counter = JSON.parse(localStorage.getItem("counter"));
     }
     pedirLocalStorage();
+
+
+    function guardarLocalStorage() {
+        localStorage.setItem("counter", JSON.stringify(counter));
+    };
+    guardarLocalStorage();
+
 
 
 
@@ -65,12 +72,12 @@ function generarDom(post) {
     itemTarea.appendChild(parrafoAutor);
     parrafoAutor.appendChild(autor);
 
-    // like a la publicación
-    itemTarea.appendChild(like);
     // añade la publicacion a la lista
     itemTarea.appendChild(parrafo);
     // añade la tarea al parrafo
     parrafo.appendChild(textTarea);
+    // like a la publicación
+    itemTarea.appendChild(like);
     // añade el botón de borrar a la publicacion
     itemTarea.appendChild(botonBorrar);
     //Añade texto al boton
@@ -140,7 +147,6 @@ function localStorageListo() {
 //Agrega publicacion a local storage
 function agregarTareasLocalStorage(textoTarea) {
     let tareas;
-
     tareas = obtenerTareasLocalStorage();
     // Añadir nueva publicacion
     tareas.push(textoTarea);
