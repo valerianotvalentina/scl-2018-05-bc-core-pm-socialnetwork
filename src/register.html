@@ -28,6 +28,10 @@
                         </div>
                         <form class="formulario">
                             <div>
+                                <!--Autentificación con facebook    -->
+                                <input class="botonFacebook" id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="Iniciar sesión con Facebook">
+                            </div>
+                            <div>
                                 <input class="inputRegistro" id="name" type="text" placeholder="Nombre usuario">
                             </div>
                             <div>
@@ -38,10 +42,6 @@
                             </div>
                             <div>
                                 <input class="botonRegistro" id="registerButton" onclick="registerWithFirebase();" type="button" value="Registrarse">
-                            </div>
-                            <div>
-                                <!--Autentificación con facebook    -->
-                <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
                             </div>
                         </form>
                         <p class="ingresarConCuenta">¿Tienes una cuenta?
