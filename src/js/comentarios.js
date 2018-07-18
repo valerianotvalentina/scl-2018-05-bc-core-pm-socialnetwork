@@ -75,10 +75,10 @@ function agregarTarea() {
 }
 // Elimina tarea del DOM
 function borrarTarea(e) {
-  console.log(e)
-  console.log(e.target.parentElement)
-  console.log(e.target.parentElement.innerText)
-  console.log(e.target.id)
+  console.log(e);
+  console.log(e.target.parentElement);
+  console.log(e.target.parentElement.innerText);
+  console.log(e.target.id);
 
   $('#myModal2').modal();//se llama al modal
   document.getElementById("eliminar").addEventListener("click", eliminar);//evento boton eliminar
@@ -86,9 +86,9 @@ function borrarTarea(e) {
 
   function eliminar() {
     if (e.target.id === 'borrar-tarea') {
-      let parent = e.target.parentElement
-      let autor = parent.childNodes[0].innerText
-      let mensaje = parent.childNodes[1].innerText
+      let parent = e.target.parentElement;
+      let autor = parent.childNodes[0].innerText;
+      let mensaje = parent.childNodes[1].innerText;
       e.target.parentElement.remove();
       borrarTareasLocalStorage({ autor, mensaje });
     }
@@ -136,7 +136,7 @@ function obtenerTareasLocalStorage() {
 // Eliminar tweet de Local Storage
 function borrarTareasLocalStorage(post) {
 
-  let tareas
+  let tareas;
   //console.log(borrarTarea)
   tareas = obtenerTareasLocalStorage();
   //console.log(tareas);
