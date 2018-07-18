@@ -38,21 +38,22 @@ function generarDom(post) {
     botonBorrar.addEventListener("click", borrarTarea);
     like.classList.add("fas", "fa-heart", "heart");
 
-    let counter=0;
-    like.addEventListener('click', function(){
-      like.classList.toggle('red');
-      counter++;
-      let contad= document.getElementById("contador");
-      contad.innerHTML= counter;
-      console.log(counter);
+    let counter = 0;
+    like.addEventListener("click", function() {
+        like.classList.toggle("red");
+        counter++;
+        let contad = document.getElementById("contador");
+        contad.innerHTML = counter;
+        console.log(counter);
     })
-    function guardarLocalStorage(){  
+
+    function guardarLocalStorage() {
         localStorage.setItem("counter", JSON.stringify(counter));
-        };
-        guardarLocalStorage();
-    
-    function pedirLocalStorage(){
-        let counter= JSON.parse(localStorage.getItem("counter"));
+    };
+    guardarLocalStorage();
+
+    function pedirLocalStorage() {
+        let counter = JSON.parse(localStorage.getItem("counter"));
         console.log(counter);
     }
     pedirLocalStorage();
@@ -64,12 +65,12 @@ function generarDom(post) {
     itemTarea.appendChild(parrafoAutor);
     parrafoAutor.appendChild(autor);
 
+    // like a la publicación
+    itemTarea.appendChild(like);
     // añade la publicacion a la lista
     itemTarea.appendChild(parrafo);
     // añade la tarea al parrafo
     parrafo.appendChild(textTarea);
-    // like a la publicación
-    itemTarea.appendChild(like);
     // añade el botón de borrar a la publicacion
     itemTarea.appendChild(botonBorrar);
     //Añade texto al boton
