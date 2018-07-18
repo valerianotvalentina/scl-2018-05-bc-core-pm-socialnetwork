@@ -16,7 +16,7 @@ function loginWithFirebase() {
                 msn.innerHTML = "<span class='error'>Usuario no registrado</span>";
             }
             if (error.code === "auth/invalid-email") {
-                msn.innerHTML = "<span class='error'>Email no válido</span>";
+                msn.innerHTML = "<span class='error'>Correo electrónico no válido</span>";
             }
 
             if (error.code === "auth/wrong-password") {
