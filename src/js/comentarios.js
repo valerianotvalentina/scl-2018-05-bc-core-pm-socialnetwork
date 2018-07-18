@@ -169,17 +169,19 @@ function obtenerTareasLocalStorage() {
 
 // Eliminar publicacion de Local Storage
 function borrarTareasLocalStorage(post) {
-	let tareas;
-	//console.log(borrarTarea)
-	tareas = obtenerTareasLocalStorage();
-	//console.log(tareas);
-	tareas.forEach(function (tarea, index) {
-		//console.log(tarea)
-		//console.log(index)
-		if (tarea.autor === post.autor && tarea.mensaje === post.mensaje) {
-			tareas.splice(index, 1);
-		}
-	})
-	localStorage.setItem("tareas", JSON.stringify(tareas));
-	//console.log(tareas)
+
+    let tareas;
+    //console.log(borrarTarea)
+    tareas = obtenerTareasLocalStorage();
+    //console.log(tareas);
+    tareas.forEach(function(tarea, index) {
+        //console.log(tarea)
+        //console.log(index)
+        if (tarea.autor === post.autor && tarea.mensaje === post.mensaje) {
+            tareas.splice(index, 1);
+        }
+    })
+    localStorage.setItem("tareas", JSON.stringify(tareas));
+    //console.log(tareas)
+
 }

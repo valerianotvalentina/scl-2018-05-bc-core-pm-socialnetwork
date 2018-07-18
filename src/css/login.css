@@ -85,3 +85,36 @@ p {
     color: #4A4A4A;
     margin-left: 138px;
 }
+
+.ingresarConCuenta {
+    font-size: 14px;
+    color: #4A4A4A;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.entrar {
+    font-size: 14px;
+    color: #00ADA7;
+    font-weight: 700;
+}
+
+a:link {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ADA7;
+    text-decoration: none;
+}

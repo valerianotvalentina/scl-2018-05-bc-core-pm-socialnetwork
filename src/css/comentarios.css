@@ -3,6 +3,10 @@ body {
     background-color: #e2c5bd;
 }
 
+.publicacion li {
+    display: inline-block;
+}
+
 textarea {
     resize: none;
     height: 75px;
@@ -165,15 +169,26 @@ textarea {
     color: white;
     border-radius: 50%;
     border: 1px solid #E84154;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
 .heart {
     cursor: pointer;
     font-size: 20px;
-    margin-left: 10px;
-    color: rgb(255, 0, 128);
+    color: #4a4a4a;
+    margin-right: 15px;
+}
+
+.red {
+    cursor: pointer;
+    color: #E84154;
+}
+
+#contador {
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 300;
 }
 
 .d-inline-block {
