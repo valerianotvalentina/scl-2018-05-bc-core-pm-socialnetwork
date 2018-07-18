@@ -45,7 +45,7 @@ function facebookLoginWithFirebase(){
 
     firebase.auth().signInWithPopup(provider)
         .then(()=>{
-            //location = "comentarios.html";
+            window.location.href = "comentarios.html";
             console.log("Login con facebook exitoso");
         })
         .catch((error)=>{
