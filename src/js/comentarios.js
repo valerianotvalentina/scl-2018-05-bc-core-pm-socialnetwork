@@ -29,6 +29,8 @@ function generarDom(post) {
 	const textTarea = document.createTextNode(post.mensaje);
 	const botonBorrar = document.createElement("button");
 	const textBoton = document.createTextNode("x");
+	const corazon = document.createElement("div");
+	const contador = document.createTextNode(post.likes);
 	const like = document.createElement("i");
 
 	// añadir clases a elementos
@@ -39,38 +41,22 @@ function generarDom(post) {
 	like.classList.add("fas", "fa-heart", "heart");
 
 	let counter = 0;
-	like.addEventListener('click', function () {
+	like.addEventListener('click', function (e) {
 		like.classList.toggle('red');
 		counter++;
-		let contad = document.getElementById("contador");
+		let contad = corazon;
 		contad.innerHTML = counter;
+
+		let parent = e.target.parentElement;
+		let autor = parent.childNodes[0].innerText;
+		let mensaje = parent.childNodes[1].innerText;
+		aumentarContadorLocalStorage({ autor, mensaje })
 		console.log(counter);
 	})
-	function guardarLocalStorage() {
-		localStorage.setItem("counter", JSON.stringify(counter));
-	};
-	guardarLocalStorage();
-
-
-	function pedirLocalStorage() {
-		 counter = JSON.parse(localStorage.getItem("counter"));			
-	}
-	pedirLocalStorage();
-	
-
-	function guardarLocalStorage() {
-		localStorage.setItem("counter", JSON.stringify(counter));		
-	};
-	guardarLocalStorage();
-
-
-
-
 
 
 	itemTarea.appendChild(parrafoAutor);
 	parrafoAutor.appendChild(autor);
-
 	// añade la publicacion a la lista
 	itemTarea.appendChild(parrafo);
 	// añade la tarea al parrafo
@@ -83,6 +69,8 @@ function generarDom(post) {
 	botonBorrar.appendChild(textBoton);
 	// añade item con tarea y boton a contenedor padre
 	listaTarea.appendChild(itemTarea);
+	itemTarea.appendChild(corazon);
+	corazon.appendChild(contador);
 
 }
 
@@ -97,7 +85,8 @@ function agregarTarea() {
 	} else {
 		let post = {
 			mensaje: tareas,
-			autor: user.displayName
+			autor: user.displayName,
+			likes: 0
 		}
 
 		//Crear elementos en el DOM
@@ -169,19 +158,34 @@ function obtenerTareasLocalStorage() {
 
 // Eliminar publicacion de Local Storage
 function borrarTareasLocalStorage(post) {
-
-    let tareas;
-    //console.log(borrarTarea)
-    tareas = obtenerTareasLocalStorage();
-    //console.log(tareas);
-    tareas.forEach(function(tarea, index) {
-        //console.log(tarea)
-        //console.log(index)
-        if (tarea.autor === post.autor && tarea.mensaje === post.mensaje) {
-            tareas.splice(index, 1);
-        }
-    })
-    localStorage.setItem("tareas", JSON.stringify(tareas));
-    //console.log(tareas)
-
+	let tareas;
+	tareas = obtenerTareasLocalStorage();
+	let index = buscarTareaLocalStorage(post)
+	tareas.splice(index, 1);
+	localStorage.setItem("tareas", JSON.stringify(tareas));
 }
+
+function buscarTareaLocalStorage(post) {
+	let tareas;
+	let position = -1
+	console.log(post)
+	tareas = obtenerTareasLocalStorage();
+	tareas.forEach(function (tarea, index) {
+		if (tarea.autor === post.autor && tarea.mensaje === post.mensaje) {
+			console.log("encontrado")
+			position = index
+		}
+	})
+	return position
+}
+
+function aumentarContadorLocalStorage(post) {
+
+	let index = buscarTareaLocalStorage(post);
+	console.log(index)
+	let tareas = obtenerTareasLocalStorage();
+	tareas[index].likes++;
+	localStorage.setItem("tareas", JSON.stringify(tareas));
+}
+
+
