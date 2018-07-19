@@ -190,4 +190,3 @@ function aumentarContadorLocalStorage(post) {
 }
 
 module.exports = obtenerTareasLocalStorage;
-
