@@ -134,6 +134,7 @@ function localStorageListo() {
 
 //Agrega publicacion a local storage
 function agregarTareasLocalStorage(textoTarea) {
+
 	let tareas;
 	tareas = obtenerTareasLocalStorage();
 	// Añadir nueva publicacion
@@ -187,5 +188,4 @@ function aumentarContadorLocalStorage(post) {
 	tareas[index].likes++;
 	localStorage.setItem("tareas", JSON.stringify(tareas));
 }
-
 
