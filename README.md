@@ -27,7 +27,7 @@ La información anterior fue una guía para tomar decisiones respecto a diseño 
 <img src="/img/1.jpeg" alt="Sketch de Baja Fidelidad"/>
 <img src="/img/2.jpeg" alt="Sketch de Baja Fidelidad"/>
 
-## Sketch alta fidelidad
+## Sketch alta fidelidad realizados en programa Sketch
 
 <img src="/imagenesVegan/Vegan-RedSocial.jpg">
 
