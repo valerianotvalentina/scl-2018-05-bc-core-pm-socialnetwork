@@ -169,7 +169,7 @@ textarea {
     color: white;
     border-radius: 50%;
     border: 1px solid #E84154;
-    margin-left: 15px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
@@ -177,18 +177,12 @@ textarea {
     cursor: pointer;
     font-size: 20px;
     color: #4a4a4a;
-    margin-right: 15px;
+    margin-left: 5px;
 }
 
 .red {
     cursor: pointer;
     color: #E84154;
-}
-
-#contador {
-    font-size: 14px;
-    color: #4a4a4a;
-    font-weight: 300;
 }
 
 .d-inline-block {
@@ -209,12 +203,17 @@ textarea {
     height: 100vh;
 }
 
-#listaTareas {
-    padding-bottom: 100px;
-}
-
 h3 {
     font-size: 15px;
     font-weight: 600;
     color: #4A4A4A;
+    text-align: center;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 30px;
 }
