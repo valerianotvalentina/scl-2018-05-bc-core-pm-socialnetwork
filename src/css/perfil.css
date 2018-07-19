@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #e2c5bd;
 }
 
 #usuario {
@@ -8,7 +9,18 @@ body {
 }
 
 #contenedorPerfil {
-    margin-top: 30px;
+    margin-top: 0px;
+    background-color: #FFF;
+    padding-top: 20px;
+}
+
+#contenedorPerfilDos {
+    margin-top: 10px;
+    background-color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100vh;
+    font-size: 14px;
 }
 
 #datosUsuario {
@@ -92,4 +104,72 @@ body {
     /* 50% of your logo width */
     display: block;
     top: 10px;
+}
+
+.nombre {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.publicacion {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    width: 100%;
+    max-width: 700px;
+}
+
+#fotoEjemplo {
+    width: 100%;
+    max-width: 700px;
+}
+
+.fa-heart {
+    color: #E84154;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.fa-comment {
+    color: #E84154;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.entrar {
+    font-size: 14px;
+    color: #00ADA7;
+    font-weight: 600;
+}
+
+a:link {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ADA7;
+    text-decoration: none;
+}
+
+hr.style1 {
+    border-top: 1px solid #c7c7c7;
+    width: 700px;
+    margin-left: 17px;
+    margin-top: 10px;
 }
