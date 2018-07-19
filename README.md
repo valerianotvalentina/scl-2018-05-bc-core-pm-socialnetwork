@@ -29,7 +29,7 @@ La información anterior fue una guía para tomar decisiones respecto a diseño 
 
 ## Sketch alta fidelidad
 
-<img src="../imagenesVegan/Vegan-RedSocial.jpg">
+<img src="/imagenesVegan/Vegan-RedSocial.jpg">
 
 ## Elevator Pitch
 
