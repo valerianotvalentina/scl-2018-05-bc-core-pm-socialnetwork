@@ -54,7 +54,7 @@ body {
 }
 
 .botonFacebook {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     width: 255px;
     height: 36px;
     background-color: #3897F0;
@@ -63,6 +63,11 @@ body {
     color: white;
     font-size: 14px;
     font-weight: 600;
+}
+
+hr.style1 {
+    border-top: 1px solid #9B9B9B;
+    width: 255px;
 }
 
 .botonRegistro {
