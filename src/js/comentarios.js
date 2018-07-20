@@ -189,4 +189,3 @@ function aumentarContadorLocalStorage(post) {
     localStorage.setItem("tareas", JSON.stringify(tareas));
 }
 
-module.exports = obtenerTareasLocalStorage;
