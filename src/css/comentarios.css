@@ -1,6 +1,26 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #e2c5bd;
+
+
+
+textarea{
+    resize: none;
+}
+p{
+    padding-right: 2%;
+    
+}
+#contenedorTareas{
+    padding: 2% 0;
+}
+h4{
+    position: absolute;
+
+}
+
+#contenedorTareas{
+    padding: 2% 0;
+}
+h4{
+    position: absolute;
 }
 
 .publicacion li {

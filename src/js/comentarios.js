@@ -182,11 +182,10 @@ function buscarTareaLocalStorage(post) {
 
 function aumentarContadorLocalStorage(post) {
 
-	let index = buscarTareaLocalStorage(post);
-	console.log(index)
-	let tareas = obtenerTareasLocalStorage();
-	tareas[index].likes++;
-	localStorage.setItem("tareas", JSON.stringify(tareas));
+    let index = buscarTareaLocalStorage(post);
+    console.log(index)
+    let tareas = obtenerTareasLocalStorage();
+    tareas[index].likes++;
+    localStorage.setItem("tareas", JSON.stringify(tareas));
 }
 
-module.exports = obtenerTareasLocalStorage;

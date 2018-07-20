@@ -1,4 +1,4 @@
-const localStorage = (tareas) => {
+const obtenerTareasLocalStorage = (tareas) => {
   
 tareas = [];
 
@@ -11,4 +11,4 @@ tareas = [];
   return tareas;
 };
 
-module.exports = localStorage;
+module.exports = obtenerTareasLocalStorage;
