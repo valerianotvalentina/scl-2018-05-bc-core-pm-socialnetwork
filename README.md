@@ -72,3 +72,7 @@ Vegan se sustentará por las recomendaciones de lugares (por medio de geolocaliz
 ## Enlace Trello (aquí podrás ver como nos organizamos y llevamos a cabo el proyecto)
 
 (https://trello.com/b/clasDREa/red-social)
+
+## Enlace a la red social (usando firebase hosting)
+
+(https://redsocial-a8990.firebaseapp.com/)
