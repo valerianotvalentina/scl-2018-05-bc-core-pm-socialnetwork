@@ -12,6 +12,7 @@ body {
     margin-top: 0px;
     background-color: #FFF;
     padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 #contenedorPerfilDos {
@@ -19,7 +20,6 @@ body {
     background-color: #FFF;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: 100vh;
     font-size: 14px;
 }
 
