@@ -156,6 +156,7 @@ function obtenerTareasLocalStorage() {
     }
     return tareas;
 }
+module.exports = obtenerTareasLocalStorage;
 
 // Eliminar publicacion de Local Storage
 function borrarTareasLocalStorage(post) {
